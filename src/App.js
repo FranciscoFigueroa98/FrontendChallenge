@@ -6,6 +6,7 @@ import ThemeConfig from "./theme";
 
 //COMPONENTE IMPORTADO
 import Bar from "./components/AppBar";
+import Footer from "./components/Footer";
 
 //COMPONENTE PADRE
 import Home from './pages/Home';
@@ -24,6 +25,7 @@ const App = () => {
           </Typography>
           <Home />
         </Container>
+        <Footer/>
       </ThemeConfig>
     </>
   );
