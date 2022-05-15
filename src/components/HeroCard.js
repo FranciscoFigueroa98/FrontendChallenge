@@ -1,10 +1,15 @@
+//REACT
 import React from "react";
 
-//material ui
+//MATERIAL UI
 import { Grid, Card, CardContent, CardMedia, Typography } from "@mui/material";
 
-//componentes
+//COMPONENTES IMPORTADOS
 import ButtonMoreInformation from "./Button";
+
+//COMPONENTE "HERO_CARD"
+//EL SGTE. COMPONENTE RETORNA UNA TARJETA CON TODA LA INFORMACIÓN RELACIONADA DE CADA PERSONAJE
+//(IMAGEN, NOMBRE, GÉNERO, ESPECIE, ESTADO, LOCALIZACIÓN Y CANTIDAD DE APARICIONES EN LA SERIE).
 
 const HeroCard = ({ character }) => {
   return (
@@ -17,7 +22,7 @@ const HeroCard = ({ character }) => {
           sx={{ minHeight: "300px" }}
         />
         <CardContent>
-          <Typography gutterBottom variant="h4">
+          <Typography gutterBottom variant="h4" textAlign="center">
             {character.name}
           </Typography>
           <Typography variant="body1">Gender: {character.gender}</Typography>

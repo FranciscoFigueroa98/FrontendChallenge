@@ -1,3 +1,5 @@
+//BREAKPOINTS PARA TRABAJAR DISEÑO RESPONSIVE
+
 const breakpoints = {
   values: {
     xs: 0,

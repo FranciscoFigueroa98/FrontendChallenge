@@ -1,3 +1,6 @@
+//PALETA DE COLORES PERSONALIZADA DEL PROYECTO
+
+//MATERIAL UI
 import { alpha } from '@mui/material/styles';
 
 function createGradient(color1, color2) {
@@ -34,11 +37,11 @@ const PRIMARY = {
   contrastText: '#fff'
 };
 const SECONDARY = {
-  lighter: '#D6E4FF',
-  light: '#84A9FF',
-  main: '#3366FF',
-  dark: '#1939B7',
-  darker: '#091A7A',
+  lighter: '#8c8c8c',
+  light: '#666666',
+  main: '#424242',
+  dark: '#333333',
+  darker: '#1a1a1a',
   contrastText: '#fff'
 };
 

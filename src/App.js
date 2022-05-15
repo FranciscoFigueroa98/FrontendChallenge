@@ -1,13 +1,21 @@
+//MATERIAL UI
 import { Container, Typography } from "@mui/material";
+
+//TEMA PERSONALIZADO DEL SITIO
 import ThemeConfig from "./theme";
-import Navbar from "./components/AppBar";
+
+//COMPONENTE IMPORTADO
+import Bar from "./components/AppBar";
+
+//COMPONENTE PADRE
 import Home from './pages/Home';
 
+//COMPONENTE PRINCIPAL
 const App = () => {
   return (
     <>
       <ThemeConfig>
-        <Navbar />
+        <Bar />
         <Container maxWidth="lg" sx={{ paddingTop: "2rem", paddingBottom: "5rem" }}>
           <Typography
             variant="h1"

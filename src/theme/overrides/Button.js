@@ -10,14 +10,12 @@ export default function Button(theme) {
         sizeLarge: {
           height: 48
         },
-        // contained
         containedInherit: {
           color: theme.palette.grey[800],
           '&:hover': {
             backgroundColor: theme.palette.grey[400]
           }
         },
-        // outlined
         outlinedInherit: {
           border: `1px solid ${theme.palette.grey[500_32]}`,
           '&:hover': {

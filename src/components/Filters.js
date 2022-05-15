@@ -1,4 +1,7 @@
+//REACT
 import React from "react";
+
+//MATERIAL UI
 import {
   Grid,
   Typography,
@@ -8,6 +11,8 @@ import {
   MenuItem,
 } from "@mui/material";
 
+//ARREGLO DE OBJETOS "GENDER ITEMS"
+//CONTIENE LOS GÉNEROS A ITERAR EN FILTRO GENDER
 const genderItems = [
   {
     value: "",
@@ -26,6 +31,8 @@ const genderItems = [
   },
 ];
 
+//ARREGLO DE OBJETOS "SPECIES ITEMS"
+//CONTIENE LAS ESPECIES A ITERAR EN FILTRO SPECIES
 const speciesItems = [
   {
     value: "",
@@ -53,6 +60,8 @@ const speciesItems = [
   },
 ];
 
+//ARREGLO DE OBJETOS "STATUS ITEMS"
+//CONTIENE LOS ESTADOS A ITERAR EN FILTRO STATUS
 const statusItems = [
   {
     value: "",
@@ -68,6 +77,8 @@ const statusItems = [
   },
 ];
 
+//COMPONENTE "FILTERS"
+//EL SGTE. COMPONENTE RETORNA LOS FILTROS POR GÉNERO, ESTADO Y ESPECIE. ADEMÁS RECIBE EL VALOR SELECCIONADO Y LA FUNCIÓN CORRESPONDIENTE AL CAMBIAR LA OPCIÓN DE CADA FILTRO.
 const Filters = ({
   gender,
   handleChangeGender,
@@ -82,8 +93,8 @@ const Filters = ({
         <FormControl fullWidth>
           <InputLabel>Gender</InputLabel>
           <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
+            labelId="gender"
+            id="gender"
             value={gender}
             label="Gender"
             onChange={handleChangeGender}
@@ -106,8 +117,8 @@ const Filters = ({
         <FormControl fullWidth>
           <InputLabel>Species</InputLabel>
           <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
+            labelId="species"
+            id="species"
             value={species}
             label="Species"
             onChange={handleChangeSpecies}
@@ -130,8 +141,8 @@ const Filters = ({
         <FormControl fullWidth>
           <InputLabel>Status</InputLabel>
           <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
+            labelId="status"
+            id="status"
             value={status}
             label="Status"
             onChange={handleChangeStatus}

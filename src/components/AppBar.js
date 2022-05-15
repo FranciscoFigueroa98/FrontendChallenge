@@ -1,7 +1,13 @@
+
+//REACT
 import React from "react";
+
+//MATERIAL UI
 import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 
-const Navbar = () => {
+//COMPONENTE "BAR"
+//EL SGTE. COMPONENTE RETORNA UNA BARRA CENTRADA EN EL HEADER DE NUESTRO PROYECTO
+const Bar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -13,4 +19,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Bar;

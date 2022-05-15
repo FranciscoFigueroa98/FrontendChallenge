@@ -1,3 +1,5 @@
+//FUENTES PERSONALIZADAS DEL PROYECTO
+
 function pxToRem(value) {
   return `${value / 16}rem`;
 }
@@ -60,6 +62,7 @@ const typography = {
     ...responsiveFontSizes({ sm: 19, md: 20, lg: 20 })
   },
   h6: {
+    ontFamily: FONT_BOLD,
     fontWeight: 700,
     lineHeight: 28 / 18,
     fontSize: pxToRem(17),
