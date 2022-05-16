@@ -1,4 +1,4 @@
-# FRONTEND CHALLENGE BY HOUM
+# FRONTEND CHALLENGE 
 
 Este proyecto fue generado a partir de un desafío propuesto por HOUM en el cual se debía consumir una API pública para mostrar los resultados en formato de hero cards.
 
