@@ -16,7 +16,7 @@ const Footer = () => {
       sx={{ backgroundColor: "#424242" }}
     >
       <Typography variant="h6" color="#FFFFFF">
-        2021, Web development carried out by Francisco Figueroa.
+        2022, Web development carried out by Francisco Figueroa.
       </Typography>
     </Box>
   );
