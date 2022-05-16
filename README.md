@@ -1,6 +1,6 @@
 # FRONTEND CHALLENGE BY HOUM
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue generado a partir de un desafío propuesto por HOUM en el cual se debía consumir una API pública para mostrar los resultados en formato de hero cards.
 
 ## Available Scripts
 
