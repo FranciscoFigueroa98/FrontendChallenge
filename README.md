@@ -2,9 +2,12 @@
 
 Este proyecto fue generado a partir de un desafío propuesto por HOUM en el cual se debía consumir una API pública para mostrar los resultados en formato de hero cards.
 
-## Available Scripts
+## Tecnología utilizada
 
-In the project directory, you can run:
+- React v18.1.0
+- Material UI v5.7.0
+- Axios v0.27.2
+- Sweet Alert v11.4.14
 
 ### `npm start`
 
