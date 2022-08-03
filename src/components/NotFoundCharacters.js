@@ -5,7 +5,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 
 //IMG
-import RickAndMortyxHOUM from "../assets/imgs/RickAndMorty.png";
+import RickAndMorty from "../assets/imgs/RickAndMorty.png";
 
 //COMPONENTE "NOT_FOUND_CHARACTERS"
 //EL SGTE. COMPONENTE RETORNA UN CONTENEDOR CON TEXTOS E IMAGEN INDICANDO QUE NO SE ENCONTRARON PERSONAJES VINCULADOS A LOS FILTROS SELECCIONADOS.
@@ -15,7 +15,7 @@ const NotFoundCharacters = () => {
       <Typography variant="h3" mb={4}>
         No characters were found with the selected filters.
       </Typography>
-      <Box component="img" src={RickAndMortyxHOUM} width="70%" mb={4}></Box>
+      <Box component="img" src={RickAndMorty} width="70%" mb={4}></Box>
       <Typography variant="h3">Try filtering by other parameters.</Typography>
     </Box>
   );
