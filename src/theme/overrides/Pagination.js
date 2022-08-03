@@ -5,7 +5,7 @@ export default function Pagination(theme) {
         root: {
           "& .MuiPaginationItem-root": {
             color: "#fff",
-            backgroundColor: "#ff5000",
+            backgroundColor: "#00b0c8",
             "&:hover": {
               backgroundColor: "#424242",
             },

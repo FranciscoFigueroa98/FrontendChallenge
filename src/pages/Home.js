@@ -24,6 +24,7 @@ import HeroCard from "../components/HeroCard";
 const Home = () => {
   //VARIABLES A UTILIZAR
   const [characters, setCharacters] = useState([]);
+  const [notFoundCharacters, setNotFoundCharacters] = useState(false);
   const [count, setCount] = useState(0);
   const [gender, setGender] = useState("");
   const [status, setStatus] = useState("");
@@ -50,6 +51,7 @@ const Home = () => {
 
         //SE QUITA LA PANTALLA DE CARGA Y SE ACTUALIZAN LAS VARIABLES CON LA INFORMACIÓN OBTENIDA DE LA API
         setLoading(false);
+        setNotFoundCharacters(false);
         setCharacters(charactersRickAndMorty);
         setCount(pages);
       })
@@ -57,11 +59,12 @@ const Home = () => {
         //EN CASO DE ERROR EN LA PETICIÓN
         //SE QUITA LA PANTALLA DE CARGA PARA LEVANTAR UNA ALERTA QUE NOS INDIQUE EL ERROR OCURRIDO
         setLoading(false);
+        setNotFoundCharacters(true);
         Swal.fire({
           icon: "error",
           title: "Error",
           text: error.message,
-          confirmButtonColor: "#ff5000",
+          confirmButtonColor: "#00b0c8",
         });
       });
   }, []);
@@ -104,6 +107,7 @@ const Home = () => {
 
         //SE QUITA LA PANTALLA DE CARGA Y SE ACTUALIZAN LAS VARIABLES CON LA INFORMACIÓN OBTENIDA DE LA API
         setLoading(false);
+        setNotFoundCharacters(false);
         setCharacters(charactersRickAndMorty);
         setCount(pages);
       })
@@ -111,6 +115,7 @@ const Home = () => {
         //EN CASO DE ERROR EN LA PETICIÓN
         //SE QUITA LA PANTALLA DE CARGA PARA LEVANTAR UNA ALERTA QUE NOS INDIQUE EL ERROR OCURRIDO
         setLoading(false);
+        setNotFoundCharacters(true);
         setCharacters([]);
         setCount(0);
       });
@@ -154,10 +159,12 @@ const Home = () => {
             : [];
         //SE QUITA LA PANTALLA DE CARGA Y SE ACTUALIZA LA VARIABLE DE LOS PERSONAJES CON LOS DATOS OBTENIDOS
         setLoading(false);
+        setNotFoundCharacters(false);
         setCharacters(charactersRickAndMorty);
       })
       .catch((error) => {
         setLoading(false);
+        setNotFoundCharacters(true);
         Swal.fire({
           icon: "error",
           title: "Error",
@@ -178,7 +185,7 @@ const Home = () => {
       />
 
       <Grid container spacing={3} sx={{ paddingTop: "2rem" }}>
-        {characters.length ? (
+        {!notFoundCharacters ? (
           <>
             {characters.map((character) => (
               <HeroCard

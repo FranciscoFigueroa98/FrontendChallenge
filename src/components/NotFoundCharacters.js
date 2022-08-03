@@ -5,7 +5,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 
 //IMG
-import RickAndMortyxHOUM from "../assets/imgs/RickAndMortyXHOUM.png";
+import RickAndMortyxHOUM from "../assets/imgs/RickAndMorty.png";
 
 //COMPONENTE "NOT_FOUND_CHARACTERS"
 //EL SGTE. COMPONENTE RETORNA UN CONTENEDOR CON TEXTOS E IMAGEN INDICANDO QUE NO SE ENCONTRARON PERSONAJES VINCULADOS A LOS FILTROS SELECCIONADOS.
