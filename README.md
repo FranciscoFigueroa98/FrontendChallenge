@@ -11,3 +11,4 @@ Se estimó trabajar este desafío con la API pública de la serie de televisión
 - Axios v0.27.2
 - Sweet Alert v11.4.14
 
+https://houm-frontend-challenge.netlify.app/
